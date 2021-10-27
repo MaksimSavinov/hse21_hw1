@@ -71,8 +71,8 @@ rm mp_R2.fq.int_trimmed
 ``` 
 12. Создаем файл с наибольшей длиной с закрытыми гэпами
 ``` 
-echo scaffold1_len3833941_cov231 > file.txt
-seqtk subseq Poil_scaffold.fa file.txt >longest_with_gaps.fasta
+echo scaffold1_cov231 > file.txt
+seqtk subseq Poil_gapClosed.fa file.txt >longest_with_closed_gaps.fasta
 ``` 
 Начальный:
 ![image](./images/stats.png)
