@@ -66,7 +66,8 @@ rm mp_R2.fq.int_trimmed
 ``` 
 11. Создаем файл с наибольшей длиной
 ``` 
-
+echo scaffold1_len3833941_cov231 > file.txt
+seqtk subseq Poil_scaffold.fa file.txt >longest.fasta
 ``` 
 Начальный:
 ![image](./images/stats.png)
