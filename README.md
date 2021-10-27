@@ -68,4 +68,23 @@ rm mp_R2.fq.int_trimmed
 ``` 
 
 ``` 
+Начальный:
+![image](./images/stats.png)
+После обрезания:
+![image](./images/stats_trim.png)
+
+После обрезания:
+![image](./images/counts.png)
+После:
+![image](./images/counts_trim.png)
+
+Начальный:
+![image](./images/mean.png)
+После обрезания:
+![image](./images/mean_trim.png)
+
+Начальный:
+![image](./images/adapter.png)
+После обрезания:
+![image](./images/adapter_trim.png)
 
