@@ -1,4 +1,7 @@
 # hse21_hw1
+## Ссылка на google collab
+https://colab.research.google.com/drive/19Uu5EdL51RYGj1Z9mA9dMnQhQ28zdh1m?usp=sharing
+
 1. Создаем папку hw1 и ссылки на нужные файлы
 ```
 mkdir hw1
