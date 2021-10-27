@@ -53,18 +53,23 @@ time platanus assemble -o Poil -f *.trimmed 2> assemble.log
 ``` 
 time platanus scaffold -o Poil -t 1 -c Poil_contig.fa -IP1 *.trimmed -OP2 *.int_trimmed 2> scaffold.log
 ``` 
-9. Закрываем гэпы
+9. Создаем файл с наибольшей длиной
+``` 
+echo scaffold1_len3833941_cov231 > file.txt
+seqtk subseq Poil_scaffold.fa file.txt >longest.fasta
+``` 
+10. Закрываем гэпы
 ``` 
 time platanus gap_close -o Poil -t 1 -c Poil_scaffold.fa -IP1 *.trimmed -OP2 *.int_trimmed 2>gap_close.log
 ``` 
-10. Удаляем ненужные файлы 
+11. Удаляем ненужные файлы 
 ``` 
 rm sub_R1.fq.trimmed
 rm sub_R2.fq.trimmed
 rm mp_R1.fq.int_trimmed
 rm mp_R2.fq.int_trimmed
 ``` 
-11. Создаем файл с наибольшей длиной
+12. Создаем файл с наибольшей длиной с закрытыми гэпами
 ``` 
 echo scaffold1_len3833941_cov231 > file.txt
 seqtk subseq Poil_scaffold.fa file.txt >longest.fasta
